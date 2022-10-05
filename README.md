@@ -26,9 +26,8 @@
 # NOTE 💡
 
 - Perlu Di Perhatikan Penggunan Script Ini
-
--  • Pastikan Internet Kamu Kencang
--  • Jika Modules Error Ketik Aja `pip install nama modulesnya`
+-  Pastikan Internet Kamu Kencang
+-  Jika Modules Error Ketik Aja `pip install nama modulesnya`
 
 # Working ON?
 
