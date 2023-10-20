@@ -17,9 +17,9 @@
 
 # SETUP NOTE 🤖
 
-- Perlu Di Perhatikan Di Bagian File Name Ini => https://github.com/Setiawan007/Gmail-Maker-BOTV2/blob/8040f15f3b1575840077f7427f9c82c99ff1ba28/proxy_config.py#L2
+- Perlu Di Perhatikan Di Bagian File Name Ini => https://github.com/Setiawan007/Gmail-Maker-BOTV2/blob/main/proxy_config.py#L2
 
-- Ini Ganti Juga => https://github.com/Setiawan007/Gmail-Maker-BOTV2/blob/8040f15f3b1575840077f7427f9c82c99ff1ba28/main.py#L353
+- Ini Ganti Juga => https://github.com/Setiawan007/Gmail-Maker-BOTV2/blob/main/main.py#L353
 
 - Sampai Ke Bawah 
 
