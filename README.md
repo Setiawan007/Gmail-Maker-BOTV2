@@ -32,5 +32,5 @@
 # Working ON?
 
 - Android => RDP Client 👍
-- Windows => 10,11,12 ON 👍
+- Windows => 7,8,10,11 ON 👍
 - Ubuntu => ON 👍
