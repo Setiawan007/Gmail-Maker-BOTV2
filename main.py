@@ -13,7 +13,7 @@ from selenium.webdriver.common import by
 from selenium.webdriver.common.keys import Keys
 import indian_names
 import random
-from password_generator import PasswordGenerator
+from passwordgenerator.pwgenerator import generate
 import requests
 from selenium.webdriver.support.ui import Select
 import time
@@ -186,11 +186,7 @@ def Enter_DOB(driver: webdriver.Chrome, day_bday, year_bday, month_bday, wait):
 
 
 def Generate_Details():
-    pwo = PasswordGenerator()
-    pwo.minlen = 9
-    pwo.maxlen = 26
-
-    password = pwo.generate()
+    password = generate()
 
     full_name = indian_names.get_full_name(gender='male')
     f_name = full_name.split()[0]
@@ -234,7 +230,6 @@ def prepare_env():
 
     uc.TARGET_VERSION = major_version
 
-    uc.install()
 
     return OSNAME
 
@@ -288,9 +283,9 @@ def prepare_proxy(proxy):
 
 
 def main(_proxy):
+    driver = None
     try:
         # proxy = "103.167.32.223:45785:Selsharmashubham859:F4s1LzV"
-
         driver = prepare_proxy(proxy=_proxy)
         wait = WebDriverWait(driver, 40)
 
@@ -341,7 +336,8 @@ def main(_proxy):
     except Exception as e:
         print(e)
         traceback.print_exc()
-        driver.close()
+        if driver is not None:
+            driver.close()
 
 
 if __name__ == "__main__":
